@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "promptcraft-py"
-version = "0.1.0"
+version = "0.2.0"
 description = "A lightweight toolkit for prompt engineering, optimization, and evaluation"
 readme = "README.md"
 license = {text = "MIT"}
@@ -45,3 +45,5 @@ source = ["promptcraft"]
 
 [tool.coverage.report]
 show_missing = true
+[project.scripts]
+promptcraft = "promptcraft.cli:main"
