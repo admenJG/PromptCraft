@@ -1,4 +1,4 @@
-﻿"""Tests for Evaluator and Scorer."""
+"""Tests for Evaluator and Scorer."""
 
 import pytest
 from promptcraft.evaluator import Evaluator, EvalResult
