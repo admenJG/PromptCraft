@@ -5,6 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![PyPI](https://img.shields.io/pypi/v/promptcraft-py.svg)](https://pypi.org/project/promptcraft-py/)
 [![Downloads](https://img.shields.io/pypi/dm/promptcraft-py.svg)](https://pypi.org/project/promptcraft-py/)
+[![Platform](https://img.shields.io/badge/platform-win%20%7C%20macos%20%7C%20linux-lightgrey.svg)]()
 
 **A lightweight Python toolkit for prompt engineering, optimization, and evaluation.**
 
@@ -18,6 +19,17 @@ PromptCraft helps developers build, test, and refine prompts for LLMs with a cle
 - **Evaluator** - Score prompt quality across clarity, specificity, and completeness
 - **Multi-provider** - Works with OpenAI, Anthropic, and any OpenAI-compatible API
 - **Zero dependencies** - Core library has no external dependencies
+
+## Platform Support
+
+| Platform | Architecture | Status |
+|----------|-------------|--------|
+| Windows 10/11 | x86_64 | Fully Supported |
+| macOS 12+ | Intel & Apple Silicon | Fully Supported |
+| Linux (Ubuntu, Debian, Fedora, etc.) | x86_64, ARM64 | Fully Supported |
+| Docker | Any | Fully Supported |
+
+**Requirements:** Python 3.8 or higher
 
 ## Quick Start
 
@@ -64,15 +76,11 @@ prompt = review_template.render(language="Python", code="def add(a, b): return a
 from promptcraft import Optimizer
 
 optimizer = Optimizer(metric="relevance", iterations=5)
-
 optimized = optimizer.optimize(
     prompt="Explain {topic}",
-    test_cases=[
-        {"topic": "quantum computing", "expected_keywords": ["qubit", "superposition"]},
-    ]
+    test_cases=[{"topic": "quantum computing", "expected_keywords": ["qubit"]}]
 )
-
-print(f"Score improved from {optimized.initial_score:.2f} to {optimized.final_score:.2f}")
+print(f"Score: {optimized.initial_score:.2f} -> {optimized.final_score:.2f}")
 `
 
 ### Evaluating Prompts
@@ -85,7 +93,6 @@ result = evaluator.score(
     prompt="Write a function that sorts a list",
     criteria=["clarity", "specificity", "completeness"]
 )
-
 print(f"Overall: {result.overall:.2f}")
 `
 
@@ -99,11 +106,28 @@ promptcraft optimize "Explain {topic}"
 
 ## Installation
 
-`ash
-# From PyPI
-pip install promptcraft-py
+### Windows
 
-# From source
+`cmd
+pip install promptcraft-py
+`
+
+### macOS
+
+`ash
+pip3 install promptcraft-py
+`
+
+### Linux (Ubuntu/Debian)
+
+`ash
+sudo apt update && sudo apt install python3-pip
+pip3 install promptcraft-py
+`
+
+### From Source
+
+`ash
 git clone https://github.com/admenJG/PromptCraft.git
 cd PromptCraft
 pip install -e .
