@@ -1,9 +1,9 @@
-﻿# 🎯 PromptCraft
+# 🎯 PromptCraft
 
 [![CI](https://github.com/USER/PromptCraft/actions/workflows/ci.yml/badge.svg)](https://github.com/USER/PromptCraft/actions)
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Downloads](https://img.shields.io/pypi/dm/promptcraft.svg)](https://pypi.org/project/promptcraft/)
+[![Downloads](https://img.shields.io/pypi/dm/promptcraft--py.svg)](https://pypi.org/project/promptcraft/)
 
 **A lightweight Python toolkit for prompt engineering, optimization, and evaluation.**
 
@@ -21,7 +21,7 @@ PromptCraft helps developers build, test, and refine prompts for LLMs with a cle
 ## 🚀 Quick Start
 
 ```bash
-pip install promptcraft
+pip install promptcraft-py
 ```
 
 ```python
@@ -102,7 +102,7 @@ print(f"Clarity: {result.scores['clarity']:.2f}")
 
 ```bash
 # From PyPI
-pip install promptcraft
+pip install promptcraft-py
 
 # From source
 git clone https://github.com/USER/PromptCraft.git
