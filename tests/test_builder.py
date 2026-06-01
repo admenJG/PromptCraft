@@ -1,4 +1,4 @@
-﻿"""Tests for PromptBuilder."""
+"""Tests for PromptBuilder."""
 
 import pytest
 from promptcraft.builder import PromptBuilder
