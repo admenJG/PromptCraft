@@ -1,4 +1,4 @@
-﻿"""Tests for Optimizer."""
+"""Tests for Optimizer."""
 
 from promptcraft.optimizer import Optimizer
 
