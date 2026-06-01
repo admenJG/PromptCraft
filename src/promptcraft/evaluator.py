@@ -1,4 +1,4 @@
-﻿"""Prompt evaluation and quality scoring."""
+"""Prompt evaluation and quality scoring."""
 
 from __future__ import annotations
 from dataclasses import dataclass, field
