@@ -1,4 +1,4 @@
-﻿"""Fluent API for building prompts."""
+"""Fluent API for building prompts."""
 
 from __future__ import annotations
 from typing import Any, Dict, List, Optional
