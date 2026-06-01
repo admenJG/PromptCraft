@@ -1,4 +1,4 @@
-﻿"""Prompt optimization through iterative refinement."""
+"""Prompt optimization through iterative refinement."""
 
 from __future__ import annotations
 import re
