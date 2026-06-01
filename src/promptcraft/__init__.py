@@ -1,6 +1,6 @@
 """PromptCraft - A lightweight toolkit for prompt engineering."""
 
-__version__ = "0.2.0"
+__version__ = "0.2.1"
 __author__ = "PromptCraft Contributors"
 
 from promptcraft.builder import PromptBuilder
