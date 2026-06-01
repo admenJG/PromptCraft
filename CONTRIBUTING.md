@@ -1,4 +1,4 @@
-﻿# Contributing to PromptCraft
+# Contributing to PromptCraft
 
 Thank you for considering contributing to PromptCraft!
 
