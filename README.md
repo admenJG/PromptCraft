@@ -1,4 +1,4 @@
-# 🎯 PromptCraft
+# 馃幆 PromptCraft
 
 [![CI](https://github.com/USER/PromptCraft/actions/workflows/ci.yml/badge.svg)](https://github.com/USER/PromptCraft/actions)
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -9,16 +9,16 @@
 
 PromptCraft helps developers build, test, and refine prompts for LLMs with a clean, composable API.
 
-## ✨ Features
+## 鉁?Features
 
-- **Prompt Builder** — Chain instructions, examples, and variables with a fluent API
-- **Template System** — Reusable prompt templates with variable interpolation
-- **Optimizer** — Automatically refine prompts using scoring and iteration
-- **Evaluator** — Score prompt quality across clarity, specificity, and completeness
-- **Multi-provider** — Works with OpenAI, Anthropic, and any OpenAI-compatible API
-- **Zero dependencies** — Core library has no external dependencies
+- **Prompt Builder** 鈥?Chain instructions, examples, and variables with a fluent API
+- **Template System** 鈥?Reusable prompt templates with variable interpolation
+- **Optimizer** 鈥?Automatically refine prompts using scoring and iteration
+- **Evaluator** 鈥?Score prompt quality across clarity, specificity, and completeness
+- **Multi-provider** 鈥?Works with OpenAI, Anthropic, and any OpenAI-compatible API
+- **Zero dependencies** 鈥?Core library has no external dependencies
 
-## 🚀 Quick Start
+## 馃殌 Quick Start
 
 ```bash
 pip install promptcraft-py
@@ -98,7 +98,7 @@ print(f"Overall: {result.overall:.2f}")
 print(f"Clarity: {result.scores['clarity']:.2f}")
 ```
 
-## 📦 Installation
+## 馃摝 Installation
 
 ```bash
 # From PyPI
@@ -110,7 +110,7 @@ cd PromptCraft
 pip install -e .
 ```
 
-## 🧪 Running Tests
+## 馃И Running Tests
 
 ```bash
 # Run all tests
@@ -120,17 +120,17 @@ pytest
 pytest --cov=promptcraft --cov-report=term-missing
 ```
 
-## 📚 Documentation
+## 馃摎 Documentation
 
 - [Getting Started](docs/getting-started.md)
 - [API Reference](docs/api-reference.md)
 - [Examples](docs/examples.md)
 - [Contributing](CONTRIBUTING.md)
 
-## 🤝 Contributing
+## 馃 Contributing
 
 Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
-## 📄 License
+## 馃搫 License
 
-This project is licensed under the MIT License — see [LICENSE](LICENSE) for details.
+This project is licensed under the MIT License 鈥?see [LICENSE](LICENSE) for details.
