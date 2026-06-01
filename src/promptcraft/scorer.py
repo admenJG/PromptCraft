@@ -1,4 +1,4 @@
-﻿"""Scoring utilities for prompt quality assessment."""
+"""Scoring utilities for prompt quality assessment."""
 
 from __future__ import annotations
 import re
