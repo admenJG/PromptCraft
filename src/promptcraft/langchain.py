@@ -1,12 +1,14 @@
+"""LangChain integration helpers."""
+
 from promptcraft.template import Template
-from typing import TYPE_CHECKING
 
 try:
     from langchain_core.prompts import PromptTemplate
 except ImportError:
     PromptTemplate = None
 
-def from_langchain(prompt):
+
+def from_langchain(prompt) -> Template:
     """Convert a LangChain PromptTemplate to a PromptCraft Template."""
 
     return Template(
@@ -15,7 +17,8 @@ def from_langchain(prompt):
         variables=prompt.input_variables,
     )
 
-def to_langchain(template):
+
+def to_langchain(template: Template):
     """Convert a PromptCraft Template to a LangChain PromptTemplate."""
 
     if PromptTemplate is None:
@@ -27,4 +30,3 @@ def to_langchain(template):
         template=template.instruction,
         input_variables=template.variables,
     )
-
