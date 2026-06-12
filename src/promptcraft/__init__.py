@@ -11,6 +11,11 @@ from promptcraft.scorer import Scorer
 from promptcraft.validator import PromptValidator, ValidationResult
 from promptcraft.library import get_template, list_templates, get_template_names
 
+from promptcraft.langchain import (
+    from_langchain,
+    to_langchain,
+)
+
 __all__ = [
     "PromptBuilder",
     "Template",
@@ -23,4 +28,6 @@ __all__ = [
     "get_template",
     "list_templates",
     "get_template_names",
+    "from_langchain",
+    "to_langchain",
 ]
